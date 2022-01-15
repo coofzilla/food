@@ -14,13 +14,10 @@ const App = () => {
           headerMode: 'screen',
           headerTintColor: 'white',
           headerStyle: { backgroundColor: '#A865C9' },
+          headerTitleAlign: 'center',
         }}
       >
-        <Screen
-          name="Search"
-          component={SearchScreen}
-          options={{ headerTitleAlign: 'center' }}
-        />
+        <Screen name="Search" component={SearchScreen} />
       </Navigator>
     </NavigationContainer>
   );
