@@ -10,7 +10,9 @@ import { useNavigation } from '@react-navigation/native';
 import ResultsDetail from './ResultsDetail';
 
 const ResultsList = ({ title, results }) => {
+  if (!results.length) return null;
   const { navigate } = useNavigation();
+
   return (
     <View style={styles.container}>
       <Text style={styles.header}>{title}</Text>
